@@ -20,7 +20,7 @@ An interactive visualization comparing **Greedy Algorithm** vs **BFS (Breadth-Fi
 - **BFS (Dynamic Programming)**: Guarantees shortest path but explores more nodes
 
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend**: React, JavaScript (ES6+)
 - **Styling**: Tailwind CSS
