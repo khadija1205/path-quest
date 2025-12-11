@@ -1,16 +1,53 @@
-# React + Vite
+# 🗺️ Path Quest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive visualization comparing **Greedy Algorithm** vs **BFS (Breadth-First Search)** for pathfinding, demonstrating the trade-offs between local optimization and global optimality.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##  Features
 
-## Expanding the ESLint configuration
+- **Real-time Algorithm Comparison**: Watch Greedy and BFS algorithms run side-by-side
+- **Animated Visualization**: See cells explored in real-time with smooth animations
+- **Cost Analysis**: Track total path cost, visited nodes, and path length
+- **Random Maze Generation**: Each run creates a unique grid with random walls and costs
+- **Dark Theme UI**: Modern, professional interface with high contrast
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+### Algorithm Insights
+- **Greedy Algorithm**: Fast but can fail or find suboptimal paths (takes locally best steps)
+- **BFS (Dynamic Programming)**: Guarantees shortest path but explores more nodes
+
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React, JavaScript (ES6+)
+- **Styling**: Tailwind CSS
+- **Graphics**: SVG for path connections
+- **Build Tool**: Vite
+
+##  Installation
+bash
+# Clone the repository
+git clone https://github.com/yourusername/pathfinding-visualizer.git
+
+# Navigate to project directory
+cd pathfinding-visualizer
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
+##  How to Use
+
+1. Click **"Run"** to start both algorithms simultaneously
+2. Watch the exploration phase (light tints)
+3. See the final paths drawn (bright circles)
+4. Compare costs and efficiency between algorithms
+5. Click **"Reset"** to generate a new random grid
